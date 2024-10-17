@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jastipin Aja</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Pastikan ini menunjuk ke file CSS yang benar -->
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <span class="logo-text">Jastipin Aja</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+        </nav>
+    </div>
+
+    <div class="store-description">
+        <h1>Choose What You Want!</h1>
+    </div>
+
+    <!-- Products Section -->
+    <div class="product-container">
+        <div class="product-card">
+            <img src="bag1.jpg" alt="Flowers Wedding Cake">
+            <h3>Coach Legacy Medium Carryall Satchel Bag - Maple</h3>
+            <p>COACH is realized in pebbled leather and features a center zip compartment for ultimate organization. Medium sized bag; approx. 12-.25"W x 8"H x 5-.75"D (width is measured across the bottom of handbag); 1.65 lbs.</p>
+            <p class="price">$350.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(0)">-</button>
+        <span id="quantity-0">0</span>
+        <button onclick="increaseQuantity(0)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(0, 'Coach Legacy Medium Carryall Satchel Bag - Maple', 350.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag2.jpg" alt="Pearls Wedding Cake">
+            <h3>Hermès Picotin 18 - Etoupe</h3>
+            <p>This Picotin Lock is in black matte alligator and clemence leather with gold hardware and has tonal stitching with two top handles.The interior is lined with natural leather, no interior pockets and has a pull through closure secured by padlock.Collection: ZOrigin: FranceCondition: Pristine; new or never Accompanied by: Hermes box, Hermes dustbag, lock, keys, carebook, CITES and ribbonMeasurements: 7" width x 5" height x 7.5" depth; 5" handles.</p>
+            <p class="price">$380.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(1)">-</button>
+        <span id="quantity-1">0</span>
+        <button onclick="increaseQuantity(1)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(1, 'Hermès Picotin 18 - Etoupe', 380.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag3.jpg" alt="Romantic Wedding Cake">
+            <h3>Polène Bag Cyme Textured Camel</h3>
+            <p>Details Made by leather goods artisans in Ubrique, Spain. Italian textured calf leather. Removable zippered pocket. Worn as a handbag, elbow bag, or shoulder bag.</p>
+            <p class="price">$460.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(2)">-</button>
+        <span id="quantity-2">0</span>
+        <button onclick="increaseQuantity(2)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(2, 'Polène Bag Cyme Textured Camel', 460.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag4.jpg" alt="Boho Wedding Cake">
+            <h3>Louis Vuitton Pochette Pouch</h3>
+            <p>LOUIS VUITTON Monogram Pochette Accessoires Pouch M51980 LV Auth am6479BRAND : LOUIS VUITTON Color : Monogram Material : Monogram Canvas Size(cm) : W21cm x H13cm x D3cm(Approx) Size(inch) : W8.3 x H5.1 x D1.2inch(Approx) Style : Pouch.</p>
+            <p class="price">$340.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(3)">-</button>
+        <span id="quantity-3">0</span>
+        <button onclick="increaseQuantity(3)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(3, 'Louis Vuitton Pochette Pouch', 340.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag5.jpg" alt="Golden Wedding Cake">
+            <h3>Gucci Jackie 1961 Shoulder Bag</h3>
+            <p>Gucci's small 'Jackie' bag takes its curved silhouette from the original style that debuted in the '60s and even boasts the same gold-tone piston clasp. Crafted in Italy from leather that'll grow its own unique patina over time, it's suspended on a thick strap that can be adjusted to your perfect drop. It has plenty of space inside for everyday essentials, like your phone, keys and wallet..</p>
+            <p class="price">$2,546.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(4)">-</button>
+        <span id="quantity-4">0</span>
+        <button onclick="increaseQuantity(4)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(4, 'Gucci Jackie 1961 Shoulder Bag', 2546.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag6.jpg" alt="Lilac Wedding Cake">
+            <h3>Miu Miu Aventure Top Handle Bag</h3>
+            <p>A silhouette taken from Miu Miu’s archives, the Aventure top-handle bag is vintage-inspired with modern practicality. Boasting a practical size for day-to-day errands and evening adventures, it has been crafted in smooth nappa leather to better showcase the powerhouse’s embossed moniker..</p>
+            <p class="price">$2,850.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(5)">-</button>
+        <span id="quantity-5">0</span>
+        <button onclick="increaseQuantity(5)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(5, 'Miu Miu Aventure Top Handle Bag', 2850.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag7.jpg" alt="Simple Wedding Cake">
+            <h3>Balenciaga City Bag Leather - Brown</h3>
+            <p>Brown Classic City is called a classic for a reason! Textured brown leather with a zipped pocket on the front, the top secures with a double zipper, opening to black fabric and another zipped pocket inside. In very good condition with a detachable shoulder strap with a 10-inch drop, the corners and edges are rubbed, the tassels are split, the hardware has scratches mainly where the strap attaches, there are a few scratches on the leather, some rubbing on the handles, and it smells a bit like perfume..</p>
+            <p class="price">$370.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(6)">-</button>
+        <span id="quantity-6">0</span>
+        <button onclick="increaseQuantity(6)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(6, 'Balenciaga City Bag Leather - Brown', 370.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag8.jpg" alt="Classic Wedding Cake">
+            <h3>Hèrmes Birkin 25 Bag Etoupe</h3>
+            <p>Signature bone top stitch detail. Lush Togo leather is supple and scratch resistant.Rich with gold hardware, this timeless birkin bag is the perfect addition to any Hermes Birkin bag collection.Comes with lock, keys, clochette, sleepers, raincoat, signature Hermes box and ribbon.Mightychic has offered exquisite Hermes selections for 21 years matched with unrivaled personal service.</p>
+            <p class="price">$23,500.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(7)">-</button>
+        <span id="quantity-7">0</span>
+        <button onclick="increaseQuantity(7)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(7, 'Hèrmes Birkin 25 Bag Etoupe', 25500.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag9.jpg" alt="Elegant Wedding Cake">
+            <h3>DeMellier The Midi New York - Olive Suede & Olive Smooth</h3>
+            <p>The Midi New York was inspired by our love for this amazing city, its energy, architecture and people. Its modern yet timeless silhouette and subtle luxury finish makes it the perfect day bag. The interior can be safely closed off with a central internal magnet. The comfortable tubular handles sit nicely in the crook of your elbow or can be held by hand. The base is constructed with triangular folds on each side and enhanced with metal feet. This bag is the perfect size to carry all essentials. Please note that this bag does not fit a 13 inch laptop.</p>
+            <p class="price">$490.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(8)">-</button>
+        <span id="quantity-8">0</span>
+        <button onclick="increaseQuantity(8)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(8, 'DeMellier The Midi New York - Olive Suede & Olive Smooth', 390.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag10.jpg" alt="Chic Wedding Cake">
+            <h3>Bottega Veneta Bag - Cream</h3>
+            <p>Material: Parakeet Intrecciato Woven Nappa Leather Hardware: Gold Features: Pockets: Open Bag style: Top Handle Closure type: Zipped Closure Serial Number / Stamp / Date Code: B09495970C Measurement in inches: W x D x H Inclusions: Dust Bag Condition: Used in excellent condition – 8 out of 10 Exterior: excellent condition, with few scratches and showing normal signs of use. Interior: excellent condition, and showing normal signs of use.</p>
+            <p class="price">$1,800.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(9)">-</button>
+        <span id="quantity-9">0</span>
+        <button onclick="increaseQuantity(9)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(9, 'Bottega Veneta Bag - Cream', 1800.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag11.jpg" alt="Chic Wedding Cake">
+            <h3>Strathberry Mosaic Bag - Bergundy</h3>
+            <p>Perfectly encapsulating Strathberry’s understated style and commitment to quality, the Mosaic Tote is designed to fit all of life’s little pieces. Inspired by the works of Eduardo Paolozzi, this timeless tote silhouette is crafted from soft, supple leather and features the precise and distinctive lines of the Mosaic collection. Combining form and function, this stylish bag is the perfect choice to complete your office look.</p>
+            <p class="price">$795.00</p>
+            <!-- Buttons and Quantity Display -->
+    <div class="quantity-control">
+        <button onclick="decreaseQuantity(10)">-</button>
+        <span id="quantity-10">0</span>
+        <button onclick="increaseQuantity(10)">+</button>
+    </div>
+    <!-- Add to Cart Button -->
+    <button class="add-to-cart" onclick="addToCart(10, 'Strathberry Mosaic Bag - Bergundy', 795.00)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="bag12.jpg" alt="Chic Wedding Cake">
+            <h3>Oxblood The Strathberry Midi Tote Bag</h3>
+            <p>Introducing the richness of the Oxblood capsule...</p>
+            <p class="price">$845.00</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(11)">-</button>
+                <span id="quantity-11">0</span>
+                <button onclick="increaseQuantity(11)">+</button>
+            </div>
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart" onclick="addToCart(11, 'Oxblood The Strathberry Midi Tote Bag', 845.00)">Add to Cart</button>
+        </div>
+    </div>
+    
+
+    <script src="products.js"></script> <!-- Link ke file JS Anda -->
+</body>
+</html>

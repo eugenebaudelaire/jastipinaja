@@ -1,0 +1,262 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1efe7;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2f4156;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 20px; /* Ukuran font lebih besar untuk logo */
+    font-weight: bold;
+    color: #f1efe7;
+}
+
+.nav {
+    display: flex;
+    gap: 30px; /* Jarak antar item navigasi */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #f1efe7; /* Warna teks sedikit lebih gelap */
+    font-size: 16px; /* Ukuran font lebih besar */
+    transition: color 0.3s; /* Transisi warna saat hover */
+}
+
+.nav a:hover {
+    color: #b08585; /* Warna saat hover */
+}
+
+/* Store description styles */
+.store-description {
+    position: relative; /* Tambahkan untuk posisi relatif */
+    background-color: #f1efe7;
+    padding: 200px;
+    text-align: center;
+    margin: 7px 0; /* Margin untuk jarak di atas dan bawah */
+}
+
+.background-image {
+    position: absolute; /* Mengatur posisi absolut */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Menutupi seluruh area */
+    height: 100%; /* Menutupi seluruh area */
+    object-fit: cover; /* Mempertahankan proporsi gambar */
+    filter: blur(5px); /* Membuat gambar sedikit blur */
+    z-index: 0; /* Di belakang konten */
+}
+
+.store-description h1,
+.store-description p {
+    position: relative; /* Mengatur posisi relatif untuk menempatkan teks di atas gambar */
+    z-index: 1; /* Di depan gambar blur */
+}
+
+.store-description h1 {
+    font-size: 30px; /* Ukuran font lebih besar */
+    color: #2f4156; /* Warna teks */
+    text-shadow: 0 0 5px #567c8d, 0 0 10px #a0d1d7; /* Efek glow */
+}
+
+.store-description p {
+    font-size: 18px; /* Ukuran font deskripsi lebih besar */
+    color: #2f4156; /* Warna teks */
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px; /* Memperbesar lebar maksimum deskripsi */
+    text-shadow: 0 0 3px #567c8d, 0 0 5px #a0d1d7; /* Efek glow */
+}
+
+
+/* Card section styles */
+.container {
+    display: flex; /* Flexbox untuk menata kartu */
+    justify-content: space-between; /* Jarak antar kartu */
+    flex-wrap: wrap; /* Memungkinkan kartu membungkus ke baris berikutnya */
+    gap: 20px; /* Jarak antar kartu */
+    padding: 20px; /* Padding di dalam kontainer */
+}
+
+.card {
+    background-color: #2f4156;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: calc(30% - 20px); /* Lebar kartu default, dikurangi jarak */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi saat hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Sedikit mengangkat kartu saat hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Mengubah bayangan saat hover */
+}
+
+.card img {
+    width: 35%; /* Gambar mengisi lebar kartu */
+    height: auto; /* Tinggi otomatis sesuai lebar */
+    border-radius: 10px;
+}
+
+/* Gaya untuk tombol */
+.btn {
+    display: inline-block; /* Mengubah display agar bisa diberi padding */
+    background-color: #fd6f2f; /* Warna latar belakang hijau */
+    color: black; /* Warna teks putih */
+    padding: 12px 24px; /* Padding dalam tombol */
+    border: none; /* Menghapus border */
+    border-radius: 5px; /* Sudut membulat */
+    text-align: center; /* Memastikan teks terletak di tengah */
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi saat hover */
+}
+
+.btn:hover {
+    background-color: #567c8d; /* Warna saat hover */
+    transform: scale(1.05); /* Memperbesar tombol sedikit saat hover */
+}
+
+/* Button styles for card */
+button {
+    margin-top: 15px;
+    padding: 12px 24px; /* Padding lebih besar */
+    background-color: white;
+    border: 1px solid #333; /* Warna border lebih gelap */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Transisi untuk tombol */
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Styles for product cards in products.html */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 20px); /* Adjust width for four columns */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi saat hover */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Sedikit mengangkat kartu saat hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Mengubah bayangan saat hover */
+}
+
+.product-card img {
+    width: 100%; /* Gambar mengisi lebar kartu produk */
+    height: auto; /* Tinggi otomatis sesuai lebar */
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 15px 0; /* Margin di atas dan bawah judul */
+    font-size: 20px; /* Ukuran font untuk judul produk */
+    color: #333;
+}
+
+.product-card p {
+    color: #666; /* Warna teks untuk deskripsi */
+    margin-bottom: 10px; /* Margin di bawah deskripsi */
+}
+
+.product-card .price {
+    font-weight: bold; /* Menebalkan teks harga */
+    color: #b08585; /* Warna harga */
+}
+
+.product-container {
+    display: flex; /* Flexbox to arrange cards */
+    justify-content: space-between; /* Space between cards */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Gap between cards */
+    padding: 20px; /* Padding for the container */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .product-card {
+        width: calc(45% - 20px); /* Adjust to two columns on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        width: 100%; /* Full width for mobile */
+    }
+
+    .nav {
+        flex-direction: column; /* Navigasi dalam kolom untuk layar kecil */
+        gap: 10px; /* Jarak antar item navigasi lebih kecil */
+    }
+}
+
+/* New styles for quantity control and Add to Cart button */
+.quantity-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-control button {
+    background-color: #b08585;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity-control span {
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
